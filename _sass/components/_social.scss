@@ -13,4 +13,7 @@
 
 .social__link--email {
 	font-size: 1rem;
+	@media (max-width: 600px) {
+		display: block;
+	}
 }
