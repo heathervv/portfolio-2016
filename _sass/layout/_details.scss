@@ -1,10 +1,9 @@
 .details {
     position: relative;
-
-    padding-top: 2.625rem;
-    padding-bottom: 1.5rem;
+    
+    padding: 2.625rem 25px 1.5rem;
     background: #fff;
-    &:after {
+    .wrapper:after {
         @include clearfix();
     }
 }

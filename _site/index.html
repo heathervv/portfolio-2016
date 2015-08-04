@@ -7,10 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Heather Vandervecht</title>
-	<meta name="description" content="Front end developer residing n London ON who likes learning, space, and Harry Potter. 
+	<meta name="description" content="Front end developer from London ON who likes learning, space, and Harry Potter. 
 ">
 
-	<link rel="stylesheet" href="/2015/css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="icon" href="favicon.png?v=1.0" type="image/x-icon" />
 	<link rel="canonical" href="http://yourdomain.com/">
 	<link rel="alternate" type="application/rss+xml" title="Heather Vandervecht" href="http://yourdomain.com/feed.xml" />
 
@@ -37,13 +38,20 @@
         <p>I like to learn something new whenever I start a project. I thrive in collaborative environments. Coding with UX in mind is something I enjoy. I try to question everything to find the best possible answer. I still have a lot to learn.</p>
         <p>I'm also an optimist. Sass > Less. I fawn over pretty much all animals that aren't creepy (though some creepy ones too). I spend a lot of time thinking about space and how freaking cool it is. Oh and Harry Potter is my homeboy.</p>
         <ul class="social">
-            <li class="social__link"><a target="_blank" href="mailto:heathervandervecht@gmail.com">heathervandervecht@gmail.com</a></li>
-            <li class="social__link"><a target="_blank" href="http://github.com/heathervv">Github</a></li>
-            <!-- <li class="social__link"><a target="_blank" href="http://codepen.io/_heathervv">CodePen</a></li> -->
+            <li class="social__link social__link--email">
+                <script>
+                    var username = "heathervandervecht";
+                    var hostname = "gmail.com";
+                    var linktext = username + "@" + hostname ;
+                    document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+                </script>
+            </li>
+            <li class="social__link"><a target="_blank" href="http://github.com/heathervv" class="ion-social-github"></a></li>
+            <li class="social__link"><a target="_blank" href="http://codepen.io/_heathervv" class="ion-social-codepen"></a></li>
             <!-- <li class="social__link"><a target="_blank" href="http://dribbble.com/_heathervv">Dribbble</a></li> -->
-            <li class="social__link"><a target="_blank" href="http://instagram.com/_heathervv">Instagram</a></li>
-            <li class="social__link"><a target="_blank" href="http://twitter.com/_heathervv">Twitter</a></li>
-            <li class="social__link"><a target="_blank" href="https://ca.linkedin.com/in/heathervandervecht">LinkedIn</a></li>
+            <li class="social__link"><a target="_blank" href="http://instagram.com/_heathervv" class="ion-social-instagram"></a></li>
+            <li class="social__link"><a target="_blank" href="http://twitter.com/_heathervv" class="ion-social-twitter"></a></li>
+            <li class="social__link"><a target="_blank" href="https://ca.linkedin.com/in/heathervandervecht" class="ion-social-linkedin"></a></li>
         </ul>
     </div>
     <a id="cta" class="cta" href="#">🍭 <i class="cta__icon ion-ios-arrow-thin-down"></i></a>
@@ -128,7 +136,7 @@
   
 </footer>
 
-<script src="/2015/js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 
   </body>
 
