@@ -1,0 +1,66 @@
+@mixin clearfix() {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+@mixin base-transition($property) {
+    @include transition-property($property);
+    @include transition-duration(.1s);
+    @include transition-timing-function(ease-in);
+}
+@mixin animate-transition($property) {
+    @include transition-property($property);
+    @include transition-duration(.3s);
+    @include transition-timing-function(cubic-bezier(.645, .045, .355, 1.000));
+}
+@mixin animate-long-transition($property) {
+    @include transition-property($property);
+    @include transition-duration(.5s);
+    @include transition-timing-function(cubic-bezier(.645, .045, .355, 1.000));
+}
+
+@mixin flexbox($direction,$justify,$align) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+  -webkit-justify-content: $justify;
+  -ms-flex-pack: $justify;
+  justify-content: $justify;
+  -webkit-box-align: $align;
+  -moz-box-align: $align;
+  -webkit-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+ 
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+ 
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+// @keyframes animatedBackground {
+//     0% { background-position: 0 50%; }
+//     100% { background-position: -1000px 50%; }
+// }

@@ -1,0 +1,23 @@
+.cta {
+    font-size: .9rem;
+
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+
+    text-align: center;
+
+    color: $med-accent;
+    &:hover .cta__icon {
+    	@include transform(translate(0,3px));
+    }
+}
+
+.cta__icon {
+    font-size: 1.5rem;
+
+    display: block;
+
+    margin-top: 5px;
+    @include animate-transition(transform);
+}

@@ -1,0 +1,62 @@
+html {
+    font-family: $serif;
+    font-size: 17px;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: $sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-family: $sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.3rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 28px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+
+    color: #888;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: 800;
+    color: darken(#888,10%);
+}
+
+a {
+    text-decoration: none;
+
+    color: $main-accent;
+
+    @include base-transition('color');
+    &:hover {
+        color: $secondary-accent;
+    }
+}
