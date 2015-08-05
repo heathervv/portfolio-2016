@@ -12,6 +12,7 @@
 }
 
 .intro__content {
+	width: 100%;
     max-width: 920px;
 
     @include flex(0 1 auto);
