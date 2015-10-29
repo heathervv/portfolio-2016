@@ -3,5 +3,4 @@
 .sass-cache/*
 
 # Ignore compiled site folder
-_site
-_site/*
+_site/
