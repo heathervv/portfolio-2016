@@ -1,1 +1,0 @@
-alert("Salut don't hate me");
