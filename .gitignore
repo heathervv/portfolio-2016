@@ -1,6 +1,3 @@
 # Ignore Sass Cache
 .sass-cache
 .sass-cache/*
-
-# Ignore compiled site folder
-_site/
