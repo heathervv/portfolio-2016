@@ -11,7 +11,7 @@
 
 .work,
 .stack {
-    @media (min-width: 600px) {
+    @media (min-width: $small-screen) {
         display: inline-block;
         float: left;
 
@@ -22,13 +22,13 @@
 
 .stack {
     margin-top: 2.5rem;
-    @media(min-width: 600px) {
+    @media(min-width: $small-screen) {
         margin-top: 0;
     }
 }
 
 .details--column {
-    @media (min-width: 600px) {
+    @media (min-width: $small-screen) {
         min-height: 215px;
 
         @include column-count(2);

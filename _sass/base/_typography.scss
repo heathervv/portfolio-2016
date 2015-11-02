@@ -12,7 +12,7 @@ h1 {
     line-height: 1;
 
     margin-bottom: 18px;
-    @media (min-width: 600px) {
+    @media (min-width: $small-screen) {
         font-size: 3rem;
         line-height: 3.9rem;
     }
@@ -61,7 +61,7 @@ a {
 
     color: $main-accent;
 
-    @media (min-width: 800px) {
+    @media (min-width: $medium-screen) {
         @include base-transition('color');
         &:hover {
             color: $secondary-accent;
