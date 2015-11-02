@@ -61,8 +61,10 @@ a {
 
     color: $main-accent;
 
-    @include base-transition('color');
-    &:hover {
-        color: $secondary-accent;
+    @media (min-width: 800px) {
+        @include base-transition('color');
+        &:hover {
+            color: $secondary-accent;
+        }
     }
 }

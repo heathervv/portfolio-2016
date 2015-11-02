@@ -12,6 +12,8 @@
         text-align: center;
 
         color: $med-accent;
+    }
+    @media (min-width: 800px) {
         &:hover .cta__icon {
             @include transform(translate(0,3px));
         }
