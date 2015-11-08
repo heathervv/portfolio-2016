@@ -4,6 +4,8 @@
     width: 100%;
     padding: 25px;
 
+    background: $light-accent;
+
     @include flexbox(column,center,center);
     @media (min-width: $small-screen) {
         height: 100vh;
@@ -17,12 +19,10 @@
 }
 
 .intro__title {
-    @include background(linear-gradient(to left, $main-accent 0%, $secondary-accent 30%, $secondary-accent 45%, $main-accent 100%) repeat);
+    background: -webkit-linear-gradient(120deg, $main-accent 0%, $secondary-accent 30%, $secondary-accent 45%, $main-accent 100%) repeat;
     @include background-clip(text);
     -webkit-text-fill-color: transparent;
     @media (min-width: $medium-screen) {
-        animation: animatedBackground 10s ease infinite;
-
         background-position: 0;
         background-size: 100%;
     }
