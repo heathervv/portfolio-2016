@@ -7,6 +7,7 @@ function init(){
 
   	button.addEventListener("click",function(e){
 		scrollToBottom();
+		e.preventDefault();
 	},false);
 
 	function scrollToBottom() {  

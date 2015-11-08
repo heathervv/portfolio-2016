@@ -10,3 +10,6 @@ github_username:  heathervv
 
 # Build settings
 markdown: kramdown
+
+gems:
+- jekyll-compass
