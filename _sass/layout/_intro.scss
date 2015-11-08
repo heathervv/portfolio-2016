@@ -14,9 +14,6 @@
 .intro__content {
 	width: 100%;
     max-width: 516px;
-
-    @include flex(0 1 auto);
-    @include order(0);
 }
 
 .intro__title {
