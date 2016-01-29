@@ -29,7 +29,7 @@
 
 .details--column {
     @media (min-width: $small-screen) {
-        min-height: 215px;
+        min-height: 180px;
 
         @include column-count(2);
     }
@@ -62,6 +62,8 @@
 
     margin-right: 0;
     margin-bottom: 10px;
+
+    color: #000;
     a {
         color: #000;
         &:hover {
@@ -71,11 +73,14 @@
 }
 
 .tags {
-    padding-left: 3px;
     display: inline-block;
+
+    padding-left: 3px;
     li {
         display: inline-block;
-        color: #888;
+
         padding: 0 3px;
+
+        color: #888;
     }
 }
