@@ -1,8 +1,6 @@
 .cta {
     display: none;
     @media (min-width: $small-screen) {
-        font-size: .9rem;
-
         position: absolute;
         bottom: 25px;
         left: 5%;
@@ -21,7 +19,7 @@
 }
 
 .cta__icon {
-    font-size: 1.5rem;
+    font-size: .9rem;
 
     display: block;
 
