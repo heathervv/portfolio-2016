@@ -9,7 +9,22 @@
     }
 }
 
-.work,
+.details--work {
+  // border-bottom: 1px solid $med-accent;
+  padding-top: 4rem;
+  .details__list:after {
+      @include clearfix();
+  }
+  .details__link {
+    width: 50%;
+    float: left;
+  }
+  .details__project {
+    font-size: 1.1rem;
+  }
+}
+
+.clients,
 .stack {
     @media (min-width: $small-screen) {
         display: inline-block;
@@ -47,11 +62,14 @@
 }
 
 .details__title {
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 .details__link {
     padding-top: 10px;
+    &:hover .details__arrow {
+      color: $secondary-accent;
+    }
 }
 
 .details__project {
@@ -70,6 +88,14 @@
             color: $secondary-accent;
         }
     }
+}
+
+.details__arrow {
+  display: inline-block;
+  @include prefix(transform, rotate(-140deg), webkit ms moz);
+  font-size: .8em;
+  color: $main-accent;
+  @include base-transition('color');
 }
 
 .tags {

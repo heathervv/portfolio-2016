@@ -6,7 +6,7 @@
 	line-height: 0;
 	visibility: hidden;
 	width: 0;
-	height: 0; 
+	height: 0;
 }
 
 @mixin base-transition($property) {
@@ -43,7 +43,7 @@
   -ms-flex-align: $align;
   align-items: $align;
 }
- 
+
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;
@@ -51,13 +51,22 @@
   -ms-flex:  $values;
   flex:  $values;
 }
- 
+
 @mixin order($val) {
-  -webkit-box-ordinal-group: $val;  
-  -moz-box-ordinal-group: $val;     
-  -ms-flex-order: $val;     
-  -webkit-order: $val;  
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
   order: $val;
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
 }
 
 // @keyframes animatedBackground {
