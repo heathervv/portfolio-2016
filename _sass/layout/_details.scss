@@ -16,8 +16,10 @@
       @include clearfix();
   }
   .details__link {
-    width: 50%;
-    float: left;
+      @media (min-width: $small-screen) {
+        width: 50%;
+        float: left;
+    }
   }
   .details__project {
     font-size: 1.1rem;
