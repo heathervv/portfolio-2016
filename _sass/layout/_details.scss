@@ -23,7 +23,14 @@
   }
   .details__project {
     font-size: 1.1rem;
+    margin-bottom: 6px;
   }
+    .tags {
+        display: block;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+
 }
 
 .clients,
